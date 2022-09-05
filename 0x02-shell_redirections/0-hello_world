@@ -1,2 +1,2 @@
 #!/bin/bash
-#include <stdio.h> int main() { printf("Hello, World"); retun 0;}
+echo 'Hello, World'
