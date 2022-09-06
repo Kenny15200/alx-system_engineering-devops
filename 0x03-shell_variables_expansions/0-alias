@@ -1,0 +1,2 @@
+#!/bin/bash
+alisa ls="ls -la" \ls -al
