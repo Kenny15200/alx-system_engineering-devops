@@ -1,1 +1,1 @@
-Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
+16. The eggs of the brood need to be an odd number
