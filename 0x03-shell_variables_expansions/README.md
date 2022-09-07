@@ -1,1 +1,1 @@
-16. The eggs of the brood need to be an odd number
+Write a shell script that adds the two numbers stored in the environment variables WATER and STIR and prints the result.
