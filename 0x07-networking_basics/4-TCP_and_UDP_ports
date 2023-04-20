@@ -1,6 +1,5 @@
-#!/bin/env bash
-#Showing Listening Connection
-#Showing PID name which each socket belongs to.
-netstat -tln\n
+#!/usr/bin/env bash
+#Showing Listening Connection and Showing PID name which each socket belongs to.
+netstat -tln
 netstat -ap
 
