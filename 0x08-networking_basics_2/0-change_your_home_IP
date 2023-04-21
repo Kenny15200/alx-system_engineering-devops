@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# A script to configures server to change host ip address to another ip address.
+
+# Define the new IP address
+Localhost_Ip="127.0.0.2"
+Facebook.com="8.8.8.8"
+
+#To update the host file with the new Ip Addressess
+sudo sed -i "/^127.0.0.1/c\127.0.0.1 localhost\n$Localhost_ip localhost.localdomain localhost" /etc/hosts
+sudo sed -i "/^127.0.0.1/c\127.0.0.1 localhost\n$Localhost_Ip facebook.com" /etc/h
+osts
+
+#Then reset the networking service to apply the changes 
+sudo systemctl restart networking
+
+#Now, to test the new connection
+
+ping -c 2 localhost
+ping -c 2 facebook.com
