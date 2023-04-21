@@ -15,5 +15,5 @@ sudo systemctl restart networking
 
 #Now, to test the new connection
 
-ping -c 2 localhost
-ping -c 2 facebook.com
+ping localhost
+ping facebook.com
