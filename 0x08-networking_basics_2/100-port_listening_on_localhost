@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display listens port 98 on localhost
+sudo lsof -i :98
+telnet localhost 98
+"Hello, World"
+"test"
