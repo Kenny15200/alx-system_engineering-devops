@@ -1,10 +1,5 @@
 #!/usr/bin/env ruby
 
-regex = /School/
-string = ARGV[0]
+#script that accepts one argument and pass it to a regular expression matching method
 
-if string =~ regex
-  puts "Match found: #{string}"
-else
-  puts "No match found."
-end
+puts ARGV[0].scan(/School/).join
