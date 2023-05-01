@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-# This script create a SSH RSA key pair
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCrVr/VAW5R+JWCTUVccOwUZTLvNVKJOgAhyW0mDKdwoQxuXxNlZgoCKF1pe9sUXs0ZJaW/am49l8ITICkWVzdrETnre+dAqa1DUD9BMffvitKlEtiJvvAVjDVZ+bt43IPF3vvopooRyQOQ1d5ZhB6XVlWW812ZYIZVPxqB/UdInGn17zm+Pwa8LDptocV7V6tGGhohaD8UKzkqcpLCcuxpS09D/n5EguKd9TOa1fD8+Dwr8vGTNjzCRxun9NqMKI/Cw4hw1gB+nc3T7bIOcJP+bT8rmgTr4hW0NVinoOu4visGpqpsLxFFIaDFybAXmtdNlVlrGQ1lxVAQzGi3xcwihS7jbvbQfPCwSyFNNL+Uxl5wKt0uS8Cyy+JF7A4L1zfWR71v+IsuLYZoriVZ0h86ldH2n0edrPUOOz5VecdJIxQ6BnV6Cw89u9B26Ar/G+kzxLsYepTEMRQGMVPuD9bqhSvroDCzzROakKCtFaDZ+GRC1Q+mLdm7yZzwvX6Tbus= opaleyekehinde70@gmail.com
+# This script create a SSH RSA key pair and display the public key
+
+cat ~/.ssh/id_rsa.pub
+
