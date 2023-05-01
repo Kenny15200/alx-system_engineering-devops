@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Display a script that loops from 1 to 10
+
+i=1
+while [ $i -le 10 ]
+do
+#Display "Bad luck for the 4th loop"
+	if [ $i -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $i -eq 8 ]
+	then
+		echo "good luck"
+#Display "Best School" for the other iteration
+	else
+		echo "Best School"
+	fi
+	
+
+	i=$((i+1))
+done
