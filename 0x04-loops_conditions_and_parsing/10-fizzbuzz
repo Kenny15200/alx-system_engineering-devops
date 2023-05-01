@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#script that displays numbers from 1 to 100.
+
+for (( i=1; i<=100; i++ ))
+do
+	case $((i % 15)) in 
+		0)
+			echo "Fizzbuzz"
+			;;
+		3|6|9|12)
+			echo "Fizz"
+			;;
+		5|10)
+			echo "Buzz"
+			;;
+		*)
+			echo $i
+			;;
+	esac
+done
