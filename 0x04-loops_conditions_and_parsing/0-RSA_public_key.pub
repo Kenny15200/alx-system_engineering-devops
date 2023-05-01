@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # This script create a SSH RSA key pair and display the public key
 
-cat ~/.ssh/id_rsa.pub
-
+cat /home/kenny/.ssh/id_rsa.pub
