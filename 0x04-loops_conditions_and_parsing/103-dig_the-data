@@ -2,17 +2,17 @@
 # a Bash script that groups visitors by IP and HTTP status code, and displays this data.
 
 # extract IP and HTTP status code using awk
-awk '{print $1,$9}' apache-access.log | \
+awk '{print $1,$9}' apache-access.log | sort | uniq -c | awk '{print $1,$2,$3}' | sort -nr 
 
 # sort by IP and HTTP status code
-sort | \
+#sort | \
 
 # count occurrences of each IP and HTTP status code combination
-uniq -c | \
+#uniq -c | \
 
 # format output
-awk '{print $1,$2,$3}' | \
+#awk '{print $1,$2,$3}' | \
 
 # sort by occurrence number in descending order
-sort -nr
+#sort -nr
 
