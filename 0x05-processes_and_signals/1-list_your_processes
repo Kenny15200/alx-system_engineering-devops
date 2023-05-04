@@ -1,3 +1,22 @@
 #!/usr/bin/env bash
 # A  script that displays a list of currently running processes
-ps --forest -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd
+
+# Get the process information using the ps command
+# -e: Select all processes
+# -o: Specify the output format
+# user: User owning the process
+# pid: Process ID
+# ppid: Parent process ID
+# %cpu: CPU utilization
+# %mem: Memory utilization
+# vsz: Virtual memory size in kilobytes
+# rss: Resident Set Size in kilobytes
+# tty: Controlling terminal
+# stat: Process status
+# start: Time the process started
+# time: CPU time the process has used
+# cmd: Command used to start the process
+processes=$(ps -e -o user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd)
+
+# Print the process information
+echo "$processes"
