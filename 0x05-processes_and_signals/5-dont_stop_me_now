@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#  a Bash script that stops 4-to_infinity_and_beyond process
+#ps aux | grep <script_name> to search for the script PID
+
+#This command 'kill <PID_NAME>' to terminate the script from the other terminal
+kill 6497
