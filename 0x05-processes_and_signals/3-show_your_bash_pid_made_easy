@@ -4,7 +4,7 @@
 for pid in /proc/*/; do
     pid=${pid%/}
     if [[ -f "$pid/cmdline" ]] && grep -q "bash" "$pid/cmdline"; then
-        echo "$(basename $pid) bash"
+        echo "$(basename "$pid") bash"
     fi
 done
 
