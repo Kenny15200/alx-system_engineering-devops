@@ -16,7 +16,7 @@
 # start: Time the process started
 # time: CPU time the process has used
 # cmd: Command used to start the process
-processes=$(ps -e -o user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd)
+processes=$(ps aux -e -o user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd)
 
 # Print the process information
 echo "$processes"
