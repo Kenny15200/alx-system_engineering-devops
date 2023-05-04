@@ -16,6 +16,6 @@
 # start: Time the process started
 # time: CPU time the process has used
 # cmd: Command used to start the process
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+ps aux
 
 # Print the process information
