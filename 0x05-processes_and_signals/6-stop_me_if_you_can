@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# a Bash script that stops 4-to_infinity_and_beyond process. without using kill or killalli
+# Find the process ID (PID) of the 4-to_infinity_and_beyond process
+pid=$(pgrep -f "4-to_infinity_and_beyond")
+
+if [[ -n $pid ]]; then
+  # Get the process group ID (PGID) of the process
+  pgid=$(ps -o pgid= -p $pid)
+
+  # Send the SIGSTOP signal to the process group using pkill
+  pkill -g $pgid
+
+  # Wait for the process to stop
+  while [[ -e /proc/$pid ]]; do
+    sleep 1
+  done
+
+  echo "Terminated"
+else
+  echo "Process not found"
+fi
+
