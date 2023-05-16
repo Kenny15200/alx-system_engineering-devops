@@ -4,13 +4,16 @@
 #With a sleep 2 in between each iteration
 #I am invincible!!! when receiving a SIGTERM signal
 
+# Find the process ID (PID) of the 7-highlander process
+pid=$(ps aux | grep "7-highlander" | grep -v grep | awk '{print $2}')
 
-# Register the SIGTERM signal handler function
+if [[ -n $pid ]]; then
+# Register :wwthe SIGTERM signal handler function
 trap 'echo "I am invincible!!!"; exit' SIGTERM
-while true;
-do
-	echo "To infinity and beyond"
-	sleep 2
-done
-# Register the SIGTERM signal handler function
-trap 'echo "I am invincible!!!"' SIGTERM
+	while true;do
+		echo "To infinity and beyond"
+		sleep 2
+	done
+else
+	"process not found"
+fi

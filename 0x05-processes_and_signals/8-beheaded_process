@@ -1,0 +1,4 @@
+#!/bin/env bash
+# Find the process ID (PID) of the 7-highlander process
+
+kill $(pgrep -f "7-highlander")

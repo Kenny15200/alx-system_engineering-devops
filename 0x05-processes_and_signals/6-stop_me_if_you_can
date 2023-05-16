@@ -16,7 +16,7 @@ if [[ -n $pid ]]; then
     sleep 1
   done
 
-  echo "Terminated"
+#  echo "Terminated"
 else
   echo "Process not found"
 fi

@@ -2,7 +2,7 @@
 # A Bash script that stops 4-to_infinity_and_beyond process without using kill or killall.
 
 # Find the process ID (PID) of the 4-to_infinity_and_beyond process
-pid=$(pgrep -f "4-to_infinity_and_beyond")
+pid=$(pgrep -f "7-highlander")
 
 if [[ -n $pid ]]; then
   # Get the process group ID (PGID) of the process
@@ -20,4 +20,3 @@ if [[ -n $pid ]]; then
 else
   echo "Process not found"
 fi
-
