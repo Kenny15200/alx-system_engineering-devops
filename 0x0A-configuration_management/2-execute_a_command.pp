@@ -2,7 +2,7 @@
 
 exec { 'killmenow':
   command     => 'pkill killmenow',
-  path        => '/usr/bin:/bin:/usr/sbin:/sbin',
+  path        => '/usr/bin',
   refreshonly => true,
 }
 
