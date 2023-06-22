@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 0x18. Webstack monitoring
 DevOps
@@ -113,6 +112,3 @@ Directory: 0x18-webstack_monitoring
 File: 2-setup_datadog
     
 Copyright © 2023 ALX, All rights reserved.
-=======
-Test me
->>>>>>> 48afad05d7a45f9f527b83a80e2b7875863295c9
